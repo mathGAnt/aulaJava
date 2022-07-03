@@ -5,11 +5,11 @@ public class Pratica01 {
 
         int i, max, min, iMax, iMin;
 
-        String cidades[] = new String[]{"Londres", "Madrid", "Nueva York", "Buenos Aires",
-                                        "Asuncion", "Sao Paulo", "Lima", "Santiago de Chile",
-                                        "Lisboa", "Tokio"};
-        int temps[][] = new int[][]{{-2, 33}, {-3, 32}, {-8, 27}, {4, 37}, {6, 42}, {5, 43},
-                                    {0, 39}, {-7, 26}, {1, 31}, {-10, 35}};
+        String[] cidades = new String[]{"Londres", "Madrid", "Nueva York", "Buenos Aires",
+                "Asuncion", "Sao Paulo", "Lima", "Santiago de Chile",
+                "Lisboa", "Tokio"};
+        int[][] temps = new int[][]{{-2, 33}, {-3, 32}, {-8, 27}, {4, 37}, {6, 42}, {5, 43},
+                {0, 39}, {-7, 26}, {1, 31}, {-10, 35}};
 
         min = temps[0][0];
         max = temps[0][1];
@@ -17,7 +17,7 @@ public class Pratica01 {
         iMin = 0;
 
         for (i = 0; i < temps.length; i++) {
-            if(temps[i][1] > max) {
+            if (temps[i][1] > max) {
                 max = temps[i][1];
                 iMax = i;
             }
